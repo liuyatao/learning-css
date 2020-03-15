@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="nav-logo">Learning Web Dev</a>
+            <ul class="nav-menu">
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JAVASCRIPT</a></li>
+            </ul>
+            <button class="nav-toggle"></button>
+        </nav>
+    </header>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.nav-toggle').click(
+                function(){
+                    $('.nav-toggle').toggleClass('active')
+                    $('.nav-menu').toggleClass('active')
+                }
+            )
+        })
+    </script>
+</body>
+</html>
