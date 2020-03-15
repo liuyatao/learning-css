@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'iconfont';
+    /* project id 1692206 */
+    src: url('//at.alicdn.com/t/font_1692206_1h8uzjly9g4.eot');
+    src: url('//at.alicdn.com/t/font_1692206_1h8uzjly9g4.eot?#iefix') format('embedded-opentype'),
+        url('//at.alicdn.com/t/font_1692206_1h8uzjly9g4.woff2') format('woff2'),
+        url('//at.alicdn.com/t/font_1692206_1h8uzjly9g4.woff') format('woff'),
+        url('//at.alicdn.com/t/font_1692206_1h8uzjly9g4.ttf') format('truetype'),
+        url('//at.alicdn.com/t/font_1692206_1h8uzjly9g4.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 26px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.alert{
+    position: relative;
+    background: rgb(6, 179, 231);
+    border: 0px;
+    height: 50px;
+    width: 80px;
+    border-radius: 4px;
+}
+.alert::before{
+    font-family: "iconfont";
+    content: '\ea96';
+    font-size: 26px;
+    font-style: normal;
+    color: white;
+}
+
+.alert::after{
+    position: absolute;
+    font-family: "iconfont";
+    content: attr(data-count);
+    padding: 0 4px;
+    font-size: 11px;
+    font-style: normal;
+    color: white;
+    background: red;
+    bottom: 50%;
+    left: 50%;
+    border-radius: 30px;
+}
